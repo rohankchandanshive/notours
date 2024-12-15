@@ -15,7 +15,7 @@ const AppError = require('./utils/appError');
 const path = require('path');
 const bookingRoute = require('./routers/bookingRoute');
 const BookingCtrl = require('./controller/bookingController');
-
+const serverless = require('serverless-http');
 
 
 // MIDDLEWARES
@@ -103,5 +103,9 @@ app.all('*',(req,res,next)=>{
 })
 
 app.use(globalErrorHandler)
-
-module.exports = app;
+app.use('/.netlify/functions/server/api/v1/tours', toursRoute);
+app.use('/.netlify/functions/server/api/v1/users', usersRoute);
+app.use('/.netlify/functions/server/api/v1/reviews', reviewRoute);
+app.use('/.netlify/functions/server/api/v1/bookings', bookingRoute);
+module.exports = app ;
+module.exports.handler = serverless(app); 
