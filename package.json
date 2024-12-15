@@ -9,7 +9,8 @@
     "debug": "set NODE_ENV=development && ndb server.js",
     "start:prod": "set NODE_ENV=production && nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "netlify deploy --prod"
+    "build": "netlify deploy --prod",
+    "build1": "netlify-lambda build server.js"
   },
   "author": "Rohan C",
   "license": "ISC",
