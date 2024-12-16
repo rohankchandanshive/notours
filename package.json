@@ -8,15 +8,11 @@
     "dev": "set NODE_ENV=development && nodemon server.js",
     "debug": "set NODE_ENV=development && ndb server.js",
     "start:prod": "set NODE_ENV=production && nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "netlify deploy --prod",
-    "build1": "netlify-lambda build server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rohan C",
   "license": "ISC",
   "dependencies": {
-    "@netlify/functions": "^2.8.2",
-    "@types/express": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "express": "4.19",
@@ -31,11 +27,8 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.1",
     "ndb": "^1.1.5",
-    "netlify-cli": "^17.38.0",
-    "netlify-lambda": "^2.0.16",
     "nodemailer": "^6.9.15",
     "pug": "^3.0.3",
-    "serverless-http": "^3.2.0",
     "sharp": "^0.33.5",
     "stripe": "^17.4.0",
     "validator": "^13.12.0",

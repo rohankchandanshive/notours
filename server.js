@@ -16,7 +16,7 @@ const connStr = process.env.DB_CONNECTION_STRING.replace(
 )
   .replace('<db_password>', process.env.DB_PASSWORD)
   .replace('<db_name>', process.env.DB_NAME);
-const app = require('./functions/index');
+const app = require('./index');
 mongoose
   .connect(connStr, {
     useNewUrlParser: true,
