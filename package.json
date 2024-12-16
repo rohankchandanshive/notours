@@ -7,7 +7,7 @@
     "start": "set NODE_ENV=development && node server.js",
     "dev": "set NODE_ENV=development && nodemon server.js",
     "debug": "set NODE_ENV=development && ndb server.js",
-    "start:prod": "set NODE_ENV=production && nodemon server.js",
+    "build": "set NODE_ENV=production && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rohan C",
