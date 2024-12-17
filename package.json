@@ -2,7 +2,7 @@
   "name": "notours",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "set NODE_ENV=development && node server.js",
     "dev": "set NODE_ENV=development && nodemon server.js",
